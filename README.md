@@ -12,6 +12,6 @@ A meteorite package for [Atmosphere](https://atmosphere.meteor.com), providing a
 
 ### In your Meteor project:
 
-Exposes the `Numeral` object.
+Exposes the `numeral` object.
 
 API documentation is available at [http://numeraljs.com/](http://numeraljs.com/)

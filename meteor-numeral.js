@@ -1,1 +1,1 @@
-Numeral = this.numeral;
+numeral = this.numeral;
