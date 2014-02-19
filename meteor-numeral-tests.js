@@ -20,6 +20,11 @@ Tinytest.add('Numeral - Unformat test', function (test) {
 });
 
 Tinytest.add('Numeral - Manipulate test', function (test) {
-  var n = numeral(1000).add(10);
-  test.equal(n, 1010, 'Numeral failed manipulate test');
+  var n = numeral(1000);
+  test.equal(n.add(10), 1010, 'Numeral failed manipulate test');
+});
+
+Tinytest.add('Numeral - Value test', function (test) {
+  var s = numeral(1000).format('0,0');
+  test.equal(s.value, 1000, 'Numeral failed value test');
 });
