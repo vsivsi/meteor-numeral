@@ -1,8 +1,8 @@
 Package.describe({
   summary: 'Package to wrap Numeral-js, a library for formatting and manipulating numbers',
   name: 'vsivsi:numeral',
-  version: '1.5.3',
-  git: 'https://github.com/vsivsi/meteor-file-collection.git'
+  version: '1.5.3_1',
+  git: 'https://github.com/vsivsi/meteor-numeral.git'
 });
 
 Package.on_use(function(api) {
