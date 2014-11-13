@@ -4,7 +4,7 @@ A meteorite package for [Atmosphere](https://atmosphere.meteor.com), providing a
 
 ### How to install:
 1. inside your project, run:
-    `$ meteor add numeral`
+    `$ meteor add vsivsi:numeral`
 
 `meteor-numeral` has no dependencies on the client or server.
 
