@@ -1,5 +1,8 @@
 Package.describe({
-  summary: 'Package to wrap Numeral-js, a library for formatting and manipulating numbers'
+  summary: 'Package to wrap Numeral-js, a library for formatting and manipulating numbers',
+  name: 'vsivsi:numeral',
+  version: '1.5.3',
+  git: 'https://github.com/vsivsi/meteor-file-collection.git'
 });
 
 Package.on_use(function(api) {
@@ -8,6 +11,6 @@ Package.on_use(function(api) {
 });
 
 Package.on_test(function (api) {
-  api.use(['numeral', 'tinytest']);
+  api.use(['vsivsi:numeral', 'tinytest']);
   api.add_files('meteor-numeral-tests.js', ['server', 'client']);
 });
