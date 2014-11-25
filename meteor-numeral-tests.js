@@ -23,3 +23,15 @@ Tinytest.add('Numeral - Manipulate test', function (test) {
   var n = numeral(1000);
   test.equal(n.add(10).value(), 1010, 'Numeral failed manipulate test');
 });
+
+if (Meteor.isClient) {
+
+  Tinytest.add('Numeral - Template helper', function (test) {
+    var s = numeral(1000).format('$0,0');
+    test.equal(typeof Blaze._globalHelpers['numeral'], 'function', 'Numeral was not registered as global template helper');
+
+    var fromTemplateHelper = Blaze._globalHelpers['numeral'](1000, '$0,0');
+    test.equal(s, fromTemplateHelper, 'Numeral global template helper did not match numeral');
+  });
+
+}
