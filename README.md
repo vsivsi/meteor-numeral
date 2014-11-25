@@ -15,10 +15,12 @@ meteor add vsivsi:numeral
 1. inside your project, run:
     `$ meteor add vsivsi:numeral`
 
-`meteor-numeral` has no dependencies on the client or server.
-
 ### In your Meteor project:
 
 Exposes the `numeral` object.
+
+In templates, a global helper `numeral` is added. 
+
+`{{numeral 1000 '$0,0'}}` yields `$1,000`.
 
 API documentation is available at [http://numeraljs.com/](http://numeraljs.com/)
