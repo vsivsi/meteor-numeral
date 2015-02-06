@@ -1,7 +1,7 @@
 Package.describe({
-  summary: 'Package to wrap Numeral-js, a library for formatting and manipulating numbers',
+  summary: 'This package is deprecated. Use numeral:numeral instead.',
   name: 'vsivsi:numeral',
-  version: '1.5.3_2',
+  version: '1.5.3_3',
   git: 'https://github.com/vsivsi/meteor-numeral.git'
 });
 
